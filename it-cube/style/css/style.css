@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: url('../img/fon.jpg') no-repeat center center;
+
+    background-size: cover;
+    height: 600px;
+
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+}
+
+.hero h1 {
+    margin: 0 0 20px 0;
+    font-size: 64px;
+}
+
+.hero p {
+    margin: 0 0 20px 0;
+    font-size: 32px;
+}
+
+.btn-info {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: #171717;
+    padding: 1em 2em;
+    border: none;
+    border-radius: .6rem;
+    cursor: pointer;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+.btn-info:hover {
+    background-color: #0c66ed;
+}
+
+
+.promotion-slider {
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.swiper-slide {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.swiper-slide img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.swiper-slide h3 {
+    margin-top: 10px;
+}
+
+.swiper-slide p {
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+
+
+
+.btn-info {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: #171717;
+    padding: 1em 2em;
+    border: none;
+    border-radius: .6rem;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+
+h2, h3 {
+    color: #2c3e50;
+}
+
+section {
+
+
+    background-color: #fff;
+
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+input, select {
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    
+}
+
+footer a {
+    color: #9bcaf3;
+    text-decoration: none;
+}
+
+.booking-steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.step {
+    flex: 1 0 30%;
+    text-align: center;
+    margin: 10px;
+}
+
+.step img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+
+.company-info {
+    text-align: center;
+}
+
+.reviews {
+    margin-top: 20px;
+}
+
+.reviews p {
+    margin-bottom: 10px;
+}
+/* Сброс стилей для разделов */
+section {
+    margin: 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Стиль заголовков */
+h2 {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Раздел `booking-steps` */
+.booking-steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.step {
+    flex: 1 0 30%;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.step img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.step p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Раздел `company-info` */
+.company-info {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+}
+
+.reviews {
+    margin-top: 20px;
+}
+
+.reviews p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Раздел `search-form` */
+.search-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-form label {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.search-form input[type="text"],
+.search-form select,
+.search-form input[type="date"],
+.search-form input[type="number"] {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-form button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+
+}
+
+.company-info {
+    padding: 60px 30px; /* Увеличить padding */
+    margin: 40px 0; /* Увеличить margin */
+    background-color: #f2f2f2; /* Добавить фоновый цвет */
+    background-image: linear-gradient(to right, #f2f2f2 0%, #e6e6e6 100%); /* Добавить градиент */
+    border: 1px solid #ddd; /* Добавить рамку */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Добавить тень */
+}
+
+.company-info h2 {
+    font-size: 36px; /* Увеличить font-size */
+    margin-bottom: 20px;
+}
+
+.company-info p {
+    font-size: 18px; /* Увеличить font-size */
+    line-height: 1.6; /* Увеличить line-height */
+}
+
+.reviews {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.reviews h3 {
+    font-size: 24px; /* Увеличить font-size */
+    margin-bottom: 15px;
+}
+
+.reviews p {
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.reviews p::before {
+    content: '“'; /* Добавить кавычки */
+    font-size: 24px;
+    color: #999;
+    margin-right: 10px;
+}
+
+.reviews p::after {
+    content: '”'; /* Добавить кавычки */
+    font-size: 24px;
+    color: #999;
+    margin-left: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .company-info h2 {
+        font-size: 28px; /* Adjust font size for smaller screens */
+    }
+    .company-info p {
+        font-size: 16px; /* Adjust paragraph size for smaller screens */
+    }
+}
+
+header nav ul {
+    margin: 0; /* Remove margin for better alignment */
+}
+
+header nav ul li {
+    display: inline-block; /* Change display for better spacing */
+}
+
+/* Responsive hamburger menu (example) */
+@media (max-width: 768px) {
+    header nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    header nav ul {
+        display: none; /* Hide navigation links on small screens */
+    }
+    .menu-toggle { /* Add a toggle button for mobile menu */
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+}
+
+button {
+    background-color: #007bff; /* Adjust color if needed */
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

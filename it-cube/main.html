@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ваш сайт</title>
+    <link rel="stylesheet" href="style/css/style.css">
+    <link rel="stylesheet" href="style/css/header.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="logo-pos">
+            <a href="main.html"><img class="logo" src="style/img/forLogo/1.svg" alt="Логотип"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Акции</a></li>
+                <li><a href="search.html">Поиск</a></li>
+                <li><a href="seat.html">Управление бронированием</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section  class="hero">
+        <h1 class="text-main">Добро пожаловать на наш сайт</h1>
+        <p>Изучите мир веб-разработки с нами.</p>
+        <button class="btn-info">Узнать больше</button>
+    </section >
+
+    <section class="booking-steps">
+        <h2>Как работает бронирование</h2>
+        <div class="step">
+            <img src="step1.png" alt="Выбор места">
+            <p>Выбор места</p>
+        </div>
+        <div class="step">
+            <img src="step2.png" alt="Ввод данных">
+            <p>Ввод данных</p>
+        </div>
+        <div class="step">
+            <img src="step3.png" alt="Подтверждение брони">
+            <p>Подтверждение брони</p>
+        </div>
+    </section>
+    <section class="company-info">
+        <h2>О нашей компании</h2>
+        <p>Цель: Предоставление удобных решений для бронирования.</p>
+        <p>Девиз: Ваш отдых начинается здесь!</p>
+        <div class="reviews">
+            <h3>Отзывы клиентов</h3>
+            <p>«Отличный сервис!» - Анна</p>
+            <p>«Быстро и удобно.» - Иван</p>
+        </div>
+    </section>
+    <section class="search-form">
+        <h2>Поиск места</h2>
+        <form action="/search" method="post">
+            <label for="region">Выбор региона:</label>
+            <select id="region" name="region">
+                <option value="moscow">Москва</option>
+                <option value="spb">Санкт-Петербург</option>
+            </select>
+            <label for="date">Дата мероприятия:</label>
+            <input type="date" id="date" name="date">
+            <label for="people">Количество взрослых и детей:</label>
+            <input type="number" id="people" name="people" min="1" max="50">
+            <button type="submit">Поиск</button>
+        </form>
+    </section>
+
+    <section class="promotion-slider">
+        <h2>Акции</h2>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <!-- Слайд 1 -->
+                <div class="swiper-slide">
+                    <img src="promotion1.jpg" alt="Акция 1">
+                    <h3>Название акции 1</h3>
+                    <p>Краткое описание акции 1.</p>
+                    <button>Подробнее</button>
+                </div>
+                <!-- Слайд 2 -->
+                <div class="swiper-slide">
+                    <img src="promotion2.jpg" alt="Акция 2">
+                    <h3>Название акции 2</h3>
+                    <p>Краткое описание акции 2.</p>
+                    <button>Подробнее</button>
+                </div>
+                <!-- Добавьте больше слайдов по аналогии -->
+            </div>
+            <!-- Если нужны стрелки навигации -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <!-- Если нужна пагинация -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <p>Телефон: 8 (800) 111-20-20</p>
+        <nav>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</div>
+<script>
+    var swiper = new Swiper('.swiper', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            // when window width is <= 499px
+            499: {
+                slidesPerView: 1,
+                spaceBetweenSlides: 30
+            },
+            // when window width is <= 999px
+            999: {
+                slidesPerView: 2,
+                spaceBetweenSlides: 40
+            }
+        }
+    });
+</script>
+
+</body>
+</html>
